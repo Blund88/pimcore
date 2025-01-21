@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+</head>
+
+<body>
+<div id="site">
+    <div id="logo">
+        <a href="http://www.pimcore.com/"><img src="/bundles/pimcoreadmin/img/logo-claim-gray.svg" alt="Logo claim grey" style="width: 400px;" /></a>
+        <hr />
+    </div>
+
+    {% if editmode %}
+        <div class="buttons">
+            <a target="_blank" href="https://pimcore.com/docs/platform/Pimcore/Getting_Started/Installation/Webserver_Installation">Install Sample Data / Boilerplate</a>
+            <a target="_blank" href="https://pimcore.com/docs/platform/Pimcore/Getting_Started">Getting Started</a>
+        </div>
+
+        <div class="info">
+            <h2>Where can I edit some pages?</h2>
+            <p>
+                Well, it seems that you're using the professional distribution of pimcore which doesn't include any
+                templates / themes or contents, it's designed to start a project from scratch. If you need a jump start
+                please consider using our sample data / boilerplate package which includes everything you need to get started.
+            </p>
+        </div>
+    {% endif %}
+</div>
+<script src="{{ asset('assets/js/app.js') }}"></script>
+</body>
+</html>
