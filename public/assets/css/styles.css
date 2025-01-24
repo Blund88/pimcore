@@ -1,91 +1,46 @@
 /*!******************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./resources/scss/app.scss ***!
   \******************************************************************************************************************/
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Lucida Sans Unicode", Arial, sans-serif;
-  font-size: 14px;
-}
-
-#site {
-  margin: 0 auto;
-  width: 600px;
-  padding: 30px 0 0 0;
-  color: #65615E;
-}
-
-h1, h2, h3 {
-  font-size: 18px;
-  padding: 0 0 5px 0;
-  border-bottom: 1px solid #001428;
-  margin-bottom: 5px;
-}
-
-h3 {
-  font-size: 14px;
-  padding: 15px 0 5px 0;
-  margin-bottom: 5px;
-  border-color: #cccccc;
-}
-
-img {
-  border: 0;
-}
-
-p {
-  padding: 0 0 5px 0;
-}
-
-a {
-  color: #000;
-}
-
-#logo {
-  text-align: center;
-  padding: 50px 0;
-}
-
-#logo hr {
-  display: block;
-  height: 1px;
-  overflow: hidden;
-  background: #BBB;
-  border: 0;
-  padding: 0;
-  margin: 30px 0 20px 0;
-}
-
-.claim {
-  text-transform: uppercase;
-  color: #BBB;
-}
-
-#site ul {
-  padding: 10px 0 10px 20px;
-  list-style: circle;
-}
-
-.buttons {
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.buttons a {
+.button-primary {
   display: inline-block;
-  background: #6428b4;
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #ff6600;
   color: #fff;
-  padding: 5px 10px;
-  margin-right: 10px;
-  width: 40%;
-  border-radius: 2px;
   text-decoration: none;
 }
-
-.buttons a:hover {
-  background: #1C8BC1;
+.button-primary:hover {
+  background-color: rgb(204, 81.6, 0);
 }
 
-.buttons a:last-child {
+.copy-brick {
+  position: relative;
+  margin: 3rem;
+}
+.copy-brick h2.title {
+  font-size: 1.5rem;
+}
+
+.hero-brick {
+  height: 700px;
+  width: 100%;
+  max-width: 100%;
+  filter: grayscale(0.4);
+  background-size: cover;
+  background-position: center;
+}
+.hero-brick__content {
+  position: relative;
+  top: 30%;
+  margin-left: 10%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+body {
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
