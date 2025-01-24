@@ -1,0 +1,14 @@
+.button-primary {
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: map-get($colors, orange);
+  color: map-get($colors, white);
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken(map-get($colors, orange), 10%);
+  }
+}

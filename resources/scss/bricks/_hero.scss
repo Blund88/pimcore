@@ -1,0 +1,17 @@
+.hero-brick {
+  height: 700px;
+  width: 100%;
+  max-width: 100%;
+  filter: grayscale(0.4);
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    position: relative;
+    top: 30%;
+    margin-left: 10%;
+    color: map-get($colors, white);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}

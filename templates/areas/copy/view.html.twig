@@ -1,0 +1,34 @@
+{% set title = pimcore_input('title') %}
+{% set copy = pimcore_wysiwyg('copy', {
+    "height": 300,
+    "width": 1100,
+    "placeholder": "Enter your content"
+}) %}
+{% set cta = pimcore_link('cta') %}
+
+{% if editmode %}
+    <div>
+        <h2>Copy brick</h2>
+        <div>
+            Title: {{ title|raw }}
+        </div>
+        <div>
+            Copy: {{ copy|raw }}
+        </div>
+        <div>
+            CTA: {{ cta|raw }}
+        </div>
+    </div>
+{% else %}
+    <div class="copy-brick">
+        {% if title is not empty %}
+            <h2 class="title">{{ title|raw }}</h2>
+        {% endif %}
+        {% if copy is not empty %}
+            <div class="copy">{{ copy|raw }}</div>
+        {% endif %}
+        {% if cta is not empty %}
+            {{ pimcore_link("cta", {"class": "button-primary"}) }}
+        {% endif %}
+    </div>
+{% endif %}

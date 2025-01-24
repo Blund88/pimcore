@@ -1,0 +1,21 @@
+{% set title = pimcore_input('title') %}
+{% set image = pimcore_image('background_image') %}
+
+{% if editmode %}
+    <div>
+        <h2>Hero brick</h2>
+        <div>
+            Title: {{ title|raw }}
+        </div>
+        <div>
+            Image: {{ image|raw }}
+        </div>
+    </div>
+{% else %}
+    {% set image = image.getSrc() %}
+    <div class="hero-brick" style="background-image: url('{{ image|raw }}')">
+        <div class="hero-brick__content">
+            <h1>{{ title|raw }}</h1>
+        </div>
+    </div>
+{% endif %}
